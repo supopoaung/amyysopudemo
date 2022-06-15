@@ -1,88 +1,81 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2638
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-
-\f0\fs24 \cf0 \{\
-  "ipcMode": null,\
-  "executionRoleArn": null,\
-  "containerDefinitions": [\
-    \{\
-      "dnsSearchDomains": null,\
-      "environmentFiles": null,\
-      "logConfiguration": null,\
-      "entryPoint": null,\
-      "portMappings": [\
-        \{\
-          "hostPort": 80,\
-          "protocol": "tcp",\
-          "containerPort": 80\
-        \}\
-      ],\
-      "command": null,\
-      "linuxParameters": null,\
-      "cpu": 0,\
-      "environment": [],\
-      "resourceRequirements": null,\
-      "ulimits": null,\
-      "dnsServers": null,\
-      "mountPoints": [],\
-      "workingDirectory": null,\
-      "secrets": null,\
-      "dockerSecurityOptions": null,\
-      "memory": null,\
-      "memoryReservation": null,\
-      "volumesFrom": [],\
-      "stopTimeout": null,\
-      "image": "942080270131.dkr.ecr.us-west-2.amazonaws.com/amyysopurepo",\
-      "startTimeout": null,\
-      "firelensConfiguration": null,\
-      "dependsOn": null,\
-      "disableNetworking": null,\
-      "interactive": null,\
-      "healthCheck": null,\
-      "essential": true,\
-      "links": null,\
-      "hostname": null,\
-      "extraHosts": null,\
-      "pseudoTerminal": null,\
-      "user": null,\
-      "readonlyRootFilesystem": null,\
-      "dockerLabels": null,\
-      "systemControls": null,\
-      "privileged": null,\
-      "name": "Springbootappcontainer"\
-    \}\
-  ],\
-  "placementConstraints": [],\
-  "memory": "128",\
-  "taskRoleArn": null,\
-  "compatibilities": [\
-    "EXTERNAL",\
-    "EC2"\
-  ],\
-  "taskDefinitionArn": "arn:aws:ecs:us-west-2:942080270131:task-definition/DeployContainer:1",\
-  "family": "DeployContainer",\
-  "requiresAttributes": [\
-    \{\
-      "targetId": null,\
-      "targetType": null,\
-      "value": null,\
-      "name": "com.amazonaws.ecs.capability.ecr-auth"\
-    \}\
-  ],\
-  "pidMode": null,\
-  "requiresCompatibilities": [\
-    "EC2"\
-  ],\
-  "networkMode": null,\
-  "runtimePlatform": null,\
-  "cpu": "1024",\
-  "revision": 1,\
-  "status": "ACTIVE",\
-  "inferenceAccelerators": null,\
-  "proxyConfiguration": null,\
-  "volumes": []\
-\}}
+{
+  "ipcMode": null,
+  "executionRoleArn": null,
+  "containerDefinitions": [
+    {
+      "dnsSearchDomains": null,
+      "environmentFiles": null,
+      "logConfiguration": null,
+      "entryPoint": null,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "protocol": "tcp",
+          "containerPort": 80
+        }
+      ],
+      "command": null,
+      "linuxParameters": null,
+      "cpu": 0,
+      "environment": [],
+      "resourceRequirements": null,
+      "ulimits": null,
+      "dnsServers": null,
+      "mountPoints": [],
+      "workingDirectory": null,
+      "secrets": null,
+      "dockerSecurityOptions": null,
+      "memory": null,
+      "memoryReservation": null,
+      "volumesFrom": [],
+      "stopTimeout": null,
+      "image": "942080270131.dkr.ecr.us-west-2.amazonaws.com/amyysopurepo",
+      "startTimeout": null,
+      "firelensConfiguration": null,
+      "dependsOn": null,
+      "disableNetworking": null,
+      "interactive": null,
+      "healthCheck": null,
+      "essential": true,
+      "links": null,
+      "hostname": null,
+      "extraHosts": null,
+      "pseudoTerminal": null,
+      "user": null,
+      "readonlyRootFilesystem": null,
+      "dockerLabels": null,
+      "systemControls": null,
+      "privileged": null,
+      "name": "Springbootappcontainer"
+    }
+  ],
+  "placementConstraints": [],
+  "memory": "128",
+  "taskRoleArn": null,
+  "compatibilities": [
+    "EXTERNAL",
+    "EC2"
+  ],
+  "taskDefinitionArn": "arn:aws:ecs:us-west-2:942080270131:task-definition/DeployContainer:1",
+  "family": "DeployContainer",
+  "requiresAttributes": [
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.ecr-auth"
+    }
+  ],
+  "pidMode": null,
+  "requiresCompatibilities": [
+    "EC2"
+  ],
+  "networkMode": null,
+  "runtimePlatform": null,
+  "cpu": "1024",
+  "revision": 1,
+  "status": "ACTIVE",
+  "inferenceAccelerators": null,
+  "proxyConfiguration": null,
+  "volumes": []
+}
