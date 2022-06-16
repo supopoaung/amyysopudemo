@@ -1,8 +1,8 @@
-/Users/supopoaung/Desktop/gitRepo/amyysopudemo/demo/src/main/java/com/example/demo/entity/Employee.java
-/Users/supopoaung/Desktop/gitRepo/amyysopudemo/demo/src/main/java/com/example/demo/service/PayslipServiceImpl.java
-/Users/supopoaung/Desktop/gitRepo/amyysopudemo/demo/src/main/java/com/example/demo/controller/PaySlipController.java
-/Users/supopoaung/Desktop/gitRepo/amyysopudemo/demo/src/main/java/com/example/demo/service/PayslipService.java
-/Users/supopoaung/Desktop/gitRepo/amyysopudemo/demo/src/main/java/com/example/demo/DemoApplication.java
-/Users/supopoaung/Desktop/gitRepo/amyysopudemo/demo/src/main/java/com/example/demo/entity/EmployeeCSV.java
-/Users/supopoaung/Desktop/gitRepo/amyysopudemo/demo/src/main/java/com/example/demo/service/EmployeeService.java
-/Users/supopoaung/Desktop/gitRepo/amyysopudemo/demo/src/main/java/com/example/demo/entity/Payslip.java
+/Users/supopoaung/Desktop/gitRepo/amyysopudemo/src/main/java/com/example/demo/DemoApplication.java
+/Users/supopoaung/Desktop/gitRepo/amyysopudemo/src/main/java/com/example/demo/entity/Employee.java
+/Users/supopoaung/Desktop/gitRepo/amyysopudemo/src/main/java/com/example/demo/service/PayslipService.java
+/Users/supopoaung/Desktop/gitRepo/amyysopudemo/src/main/java/com/example/demo/entity/Payslip.java
+/Users/supopoaung/Desktop/gitRepo/amyysopudemo/src/main/java/com/example/demo/service/PayslipServiceImpl.java
+/Users/supopoaung/Desktop/gitRepo/amyysopudemo/src/main/java/com/example/demo/entity/TaxThreshold.java
+/Users/supopoaung/Desktop/gitRepo/amyysopudemo/src/main/java/com/example/demo/controller/PaySlipController.java
+/Users/supopoaung/Desktop/gitRepo/amyysopudemo/src/main/java/com/example/demo/util/TaxThresholdConfig.java

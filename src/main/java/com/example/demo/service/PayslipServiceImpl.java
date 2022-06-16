@@ -2,15 +2,22 @@ package com.example.demo.service;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.entity.Employee;
 import com.example.demo.entity.Payslip;
+import com.example.demo.entity.TaxThreshold;
+import com.example.demo.util.TaxThresholdConfig;
 
 @Service
 public class PayslipServiceImpl implements PayslipService{
 
+	@Autowired
+	TaxThresholdConfig taxThresholdConfig;
+	
 	@Override
 	public Payslip preparePaySlip(Employee e) {
 		
@@ -48,8 +55,15 @@ public class PayslipServiceImpl implements PayslipService{
 	
 	private int calculateIncomeTax( int salary) {
 		double calculatedIncomeTax = 0;
-		
-		if ( salary >= 180001) {
+		List<TaxThreshold>taxThresholds = taxThresholdConfig.getTaxThresholds();
+		for (TaxThreshold t: taxThresholds) { System.out.println(salary);
+			if ( salary >= t.getMinAmount() && (salary <= t.getMaxAmount() || t.getMaxAmount()==0)) {  System.out.println(salary);
+				calculatedIncomeTax = ( t.getPlusAmount()+ ( salary - (t.getMinAmount()-1)) * t.getTaxRate() )/12;
+				break;
+			}
+		}
+		//$18,201 - $37,000
+		/*if ( salary >= 180001) {
 			calculatedIncomeTax = (54232 + ( salary - 180000) * 0.45)/12;
 		}
 		else if ( salary >= 87001) {
@@ -60,7 +74,7 @@ public class PayslipServiceImpl implements PayslipService{
 		}
 		else if ( salary >= 18201) {
 			calculatedIncomeTax = (( salary - 18200) * 0.19)/12;
-		}
+		}*/
 		int finalIncomeTax = roundAmount( calculatedIncomeTax);
 		return finalIncomeTax;
 	} 
