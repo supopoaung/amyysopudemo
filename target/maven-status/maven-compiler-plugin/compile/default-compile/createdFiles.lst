@@ -1,8 +1,9 @@
 com/example/demo/entity/Payslip.class
-com/example/demo/DemoApplication.class
 com/example/demo/service/PayslipServiceImpl.class
-com/example/demo/entity/TaxThreshold.class
+com/example/demo/entity/Employee.class
+com/example/demo/DemoApplication.class
 com/example/demo/util/TaxThresholdConfig.class
 com/example/demo/service/PayslipService.class
-com/example/demo/entity/Employee.class
+com/example/demo/entity/TaxCalculator.class
+com/example/demo/util/TaxThresholdConfig$1.class
 com/example/demo/controller/PaySlipController.class

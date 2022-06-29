@@ -1,11 +1,12 @@
 package com.example.demo.entity;
 
+
 public class TaxThreshold {
 
 	int minAmount;
 	int maxAmount;
 	double taxRate;
-	int plusAmount;
+	int fixedAmount;
 	
 	public int getMinAmount() {
 		return minAmount;
@@ -25,12 +26,20 @@ public class TaxThreshold {
 	public void setTaxRate(double taxRate) {
 		this.taxRate = taxRate;
 	}
-	public int getPlusAmount() {
-		return plusAmount;
+	
+	
+	public int getFixedAmount() {
+		return fixedAmount;
 	}
-	public void setPlusAmount(int plusAmount) {
-		this.plusAmount = plusAmount;
+	public void setFixedAmount(int fixedAmount) {
+		this.fixedAmount = fixedAmount;
 	}
+	@Override
+	public String toString() {
+		return "TaxThreshold [minAmount=" + minAmount + ", maxAmount=" + maxAmount + ", taxRate=" + taxRate
+				+ ", fixedAmount=" + fixedAmount + "]";
+	}
+	
 	
 	
 }

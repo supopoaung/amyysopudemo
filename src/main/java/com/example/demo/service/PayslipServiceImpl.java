@@ -56,27 +56,17 @@ public class PayslipServiceImpl implements PayslipService{
 	private int calculateIncomeTax( int salary) {
 		double calculatedIncomeTax = 0;
 		List<TaxThreshold>taxThresholds = taxThresholdConfig.getTaxThresholds();
-		for (TaxThreshold t: taxThresholds) { System.out.println(salary);
-			if ( salary >= t.getMinAmount() && (salary <= t.getMaxAmount() || t.getMaxAmount()==0)) {  System.out.println(salary);
-				calculatedIncomeTax = ( t.getPlusAmount()+ ( salary - (t.getMinAmount()-1)) * t.getTaxRate() )/12;
+		for (TaxThreshold t: taxThresholds) { 
+			if ( salary >= t.getMinAmount() && (salary <= t.getMaxAmount() || t.getMaxAmount()==0)) {  
+				calculatedIncomeTax = ( t.getFixedAmount()+ ( salary - (t.getMinAmount()-1)) * t.getTaxRate() )/12;
 				break;
 			}
 		}
-		//$18,201 - $37,000
-		/*if ( salary >= 180001) {
-			calculatedIncomeTax = (54232 + ( salary - 180000) * 0.45)/12;
-		}
-		else if ( salary >= 87001) {
-			calculatedIncomeTax = (19822 + ( salary - 87000) * 0.37)/12;
-		}
-		else if ( salary >= 37001) {
-			calculatedIncomeTax = (3572 + ( salary - 37000) * 0.325)/12;
-		}
-		else if ( salary >= 18201) {
-			calculatedIncomeTax = (( salary - 18200) * 0.19)/12;
-		}*/
+		
 		int finalIncomeTax = roundAmount( calculatedIncomeTax);
 		return finalIncomeTax;
 	} 
+	
+	
 
 }

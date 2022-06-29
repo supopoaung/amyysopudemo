@@ -6,4 +6,6 @@ import com.example.demo.entity.Payslip;
 public interface PayslipService {
 
 	Payslip preparePaySlip( Employee e);
+	
+	//abstract int calculateIncomeTax( int income);
 }

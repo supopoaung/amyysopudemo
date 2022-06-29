@@ -25,12 +25,10 @@ public class TaxThresholdConfig implements CommandLineRunner {
 		// TODO Auto-generated method stub
 			try {
 				TypeReference<List<TaxThreshold>> typeReference = new TypeReference<List<TaxThreshold>>() {};
-				//InputStream inputStream = typeReference.getClass().getResourceAsStream("taxThresholds.json");
 				File file = new File("src/main/resources/taxThresholds.json"); 
 				ObjectMapper mapper = new ObjectMapper();
 				mapper.disable (DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
 				taxThresholds=mapper.readValue(file, typeReference);
-				//taxThresholds = new ObjectMapper().readValue(inputStream, typeReference);
 			}
 			catch  (Exception e) {
 				System.out.println("Enable to process json file. " + e.getMessage());
