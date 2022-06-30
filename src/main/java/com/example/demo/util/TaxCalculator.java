@@ -1,7 +1,6 @@
 package com.example.demo.util;
 
 import java.io.File;
-import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -10,9 +9,7 @@ import java.util.List;
 import com.example.demo.entity.Employee;
 import com.example.demo.entity.Payslip;
 import com.example.demo.entity.TaxThreshold;
-import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class TaxCalculator {
